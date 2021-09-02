@@ -10,7 +10,7 @@ export class ProductsComponent implements OnInit {
   public products: any;
   private err: any;
 
-  constructor(private catService: CatalogueService) { }
+  constructor(public catService: CatalogueService) { }
 
   ngOnInit(): void {
     this.getProducts();
